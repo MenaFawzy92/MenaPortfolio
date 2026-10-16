@@ -28,17 +28,7 @@
       /* localStorage may be blocked — silently ignore */
     }
   };
-
-  // const getPreferredTheme = () => {
-  //   try {
-  //     const saved = localStorage.getItem(STORAGE_KEY);
-  //     if (saved === 'dark' || saved === 'light') return saved;
-  //   } catch (_) { /* ignore */ }
-  //   return window.matchMedia('(prefers-color-scheme: light)').matches
-  //     ? 'light'
-  //     : 'dark';
-  // };
-
+ 
     const getPreferredTheme = () => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -188,7 +178,6 @@
       });
     });
   }
-// })();
 
   /* ===========================================================
      9. CONTACT FORM — AJAX submit + inline status
