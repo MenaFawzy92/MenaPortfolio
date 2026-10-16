@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mena Fawzy Ibrahim Youssef — Frontend Developer and Software Engineer based in Cairo, Egypt." />
+  <meta name="author" content="Mena Fawzy Ibrahim Youssef" />
+  <title>Mena Fawzy — Frontend Developer &amp; Software Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ============================= -->
+  <!--        NAVIGATION             -->
+  <!-- ============================= -->
+  <header class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#home" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-mark">&lt;/&gt;</span>
+        <span class="nav__logo-text">Mena Fawzy</span>
+      </a>
+
+      <button
+        class="nav__toggle"
+        id="navToggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#education" class="nav__link">Education</a></li>
+          <li><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Toggle color theme"
+        title="Toggle theme"
+      >
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+        </svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================= -->
+    <!--            HERO               -->
+    <!-- ============================= -->
+    <section class="hero" id="home">
+      <div class="hero__background" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Hi, my name is</p>
+        
+        <div class="hero__avatar">
+          <img src="Images/Profile1.png" alt="Mena Fawzy" loading="lazy"/>
+        </div>
+        <h1 class="hero__name">Mena Fawzy Ibrahim Youssef</h1>
+        <h2 class="hero__title">
+          <span class="hero__title-accent">Frontend Developer</span>
+          <span class="hero__title-divider">·</span>
+          <span>Software Engineer</span>
+        </h2>
+        <p class="hero__tagline">
+          I build clean, responsive web experiences with HTML5, CSS3, JavaScript, and React.js —
+          backed by a solid engineering foundation and a strong eye for detail.
+        </p>
+
+        
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">
+            View My Work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn--outline">Get in Touch</a>
+          <a href="assets/Mena_Fawzy_CV.pdf" download class="btn btn--ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download CV
+          </a>
+        </div>
+
+
+        <ul class="hero__meta" aria-label="Quick facts">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Cairo, Egypt
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <path d="M22 4 12 14.01l-3-3"/>
+            </svg>
+            Open to Frontend &amp; Software Roles
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+            Military Status: Exempted
+          </li>
+        </ul>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ============================= -->
+    <!--            ABOUT              -->
+    <!-- ============================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">01 · About</span>
+          <h2 class="section__title">Get to know me</h2>
+          <p class="section__subtitle">A short introduction to who I am and what I do.</p>
+        </header>
+
+        <div class="about">
+          <div class="about__text reveal">
+            <h3 class="about__heading">Professional Summary</h3>
+            <p>
+              Electronics and Communication Engineering graduate and certified
+              <strong>Front-End Web Developer (React.js)</strong> with hands-on experience building
+              responsive, multi-section websites using <strong>semantic HTML5, modern CSS3
+              (Flexbox)</strong>, and <strong>JavaScript fundamentals</strong>.
+            </p>
+            <p>
+              My engineering background in <strong>C, C++, and Python</strong> gives me a strong
+              problem-solving foundation, while my practical frontend skills — including
+              <strong>Git/GitHub, custom CSS architecture, and 3D CSS animations</strong> — let me
+              ship polished, production-minded interfaces.
+            </p>
+            <p>
+              I'm currently expanding into <strong>Backend Development</strong> and
+              <strong>AI Engineering</strong>, and I'm open to Frontend, Software Engineering, and
+              technical roles where I can keep growing.
+            </p>
+
+            <h3 class="about__heading about__heading--mt">Career Objective</h3>
+            <p>
+              To join a forward-thinking team where I can contribute to real products, deepen my
+              React and JavaScript expertise, and grow into a well-rounded software engineer.
+            </p>
+          </div>
+
+          <aside class="about__info reveal">
+            <h3 class="about__heading">Personal Information</h3>
+            <ul class="info-list">
+              <li><span>Name</span><strong>Mena Fawzy Ibrahim Youssef</strong></li>
+              <li><span>Location</span><strong>Hadayek Helwan, Cairo, Egypt</strong></li>
+              <li><span>Phone</span><a href="tel:+201096608259">+20 109 660 8259</a></li>
+              <li><span>Email</span><a href="mailto:m440789@gmail.com">m440789@gmail.com</a></li>
+              <li><span>Alt. Email</span><a href="mailto:menaf92000@gmail.com">menaf92000@gmail.com</a></li>
+              <li><span>Languages</span><strong>Arabic (Native) · English (Fluent)</strong></li>
+              <li><span>Military</span><strong>Exempted</strong></li>
+            </ul>
+
+            <div class="about__socials">
+              <a href="https://github.com/MenaFawzy92" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.35-1.77-1.35-1.77-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.31 3.52 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/menafawzy/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.13 1.44-2.13 2.93v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+              </a>
+              <a href="mailto:m440789@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div><!--about-->        
+        <!-- <div class="about">
+          <div class="about__text reveal">
+            <div class="about__header">
+              <div class="about__avatar">
+                <img src="assets/profile.jpg" alt="Mena Fawzy Ibrahim Youssef" loading="lazy" />
+              </div>
+              <div>
+                <h3 class="about__name">Mena Fawzy Ibrahim Youssef</h3>
+                <p class="about__role">Frontend Developer · Software Engineer</p>
+              </div>
+            </div>
+
+            <h3 class="about__heading">Professional Summary</h3>
+            <p>
+              Electronics and Communication Engineering graduate and certified
+              <strong>Front-End Web Developer (React.js)</strong> with hands-on experience building
+              responsive, multi-section websites using <strong>semantic HTML5, modern CSS3
+              (Flexbox)</strong>, and <strong>JavaScript fundamentals</strong>.
+            </p>
+            <p>
+              My engineering background in <strong>C, C++, and Python</strong> gives me a strong
+              problem-solving foundation, while my practical frontend skills — including
+              <strong>Git/GitHub, custom CSS architecture, and 3D CSS animations</strong> — let me
+              ship polished, production-minded interfaces.
+            </p>
+            <p>
+              I'm currently expanding into <strong>Backend Development</strong> and
+              <strong>AI Engineering</strong>, and I'm open to Frontend, Software Engineering, and
+              technical roles where I can keep growing.
+            </p>
+
+            <h3 class="about__heading about__heading--mt">Career Objective</h3>
+            <p>
+              To join a forward-thinking team where I can contribute to real products, deepen my
+              React and JavaScript expertise, and grow into a well-rounded software engineer.
+            </p>
+          </div>
+
+          <aside class="about__info reveal">
+            <h3 class="about__heading">Personal Information</h3>
+            <ul class="info-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span>Mena Fawzy Ibrahim Youssef</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Hadayek Helwan, Cairo, Egypt</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+201096608259">+20 109 660 8259</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.1-.3.2-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4 0-.1-.1-.2-.3-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+                <a href="https://wa.me/201096608259" target="_blank" rel="noopener">WhatsApp: +20 109 660 8259</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                <a href="mailto:m440789@gmail.com">m440789@gmail.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                <a href="mailto:menaf92000@gmail.com">menaf92000@gmail.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg>
+                <span>Arabic (Native) · English (Fluent)</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>Military Status: Exempted</span>
+              </li>
+            </ul>
+
+            <div class="about__socials">
+              <a href="https://github.com/MenaFawzy92" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.35-1.77-1.35-1.77-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.31 3.52 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/menafawzy/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.13 1.44-2.13 2.93v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+              </a>
+              <a href="https://wa.me/201096608259" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.1-.3.2-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4 0-.1-.1-.2-.3-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+              </a>
+              <a href="mailto:m440789@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+                
+
+ -->
+
+      </div> <!--container-->
+    </section>
+
+    <!-- ============================= -->
+    <!--           SKILLS              -->
+    <!-- ============================= -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">02 · Skills</span>
+          <h2 class="section__title">Technical Skills</h2>
+          <p class="section__subtitle">The technologies and tools I work with.</p>
+        </header>
+
+        <div class="skills">
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+            </div>
+            <h3>Frontend</h3>
+            <ul class="skill-tags">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li><li>React.js</li>
+              <li>Responsive Design</li><li>Flexbox</li><li>CSS Grid</li>
+              <li>CSS Animations</li><li>3D Transforms</li><li>DOM Manipulation</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Tools &amp; Workflow</h3>
+            <ul class="skill-tags">
+              <li>Git</li><li>GitHub</li><li>VS Code</li><li>Chrome DevTools</li>
+              <li>Replit</li><li>Vercel</li><li>npm</li><li>AI-assisted debugging</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Programming Languages</h3>
+            <ul class="skill-tags">
+              <li>JavaScript</li><li>C</li><li>C++</li><li>Python</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>
+            </div>
+            <h3>Engineering Foundation</h3>
+            <ul class="skill-tags">
+              <li>AVR ATmega32</li><li>ARM Cortex-M</li><li>Raspberry Pi</li>
+              <li>RTOS</li><li>Embedded Linux</li><li>PCB Layout</li><li>VHDL</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Soft Skills</h3>
+            <ul class="skill-tags">
+              <li>Leadership</li><li>Communication</li><li>Presentation</li>
+              <li>Team Player</li>
+            </ul>
+          </article>
+
+          <article class="skill-card skill-card--accent reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M22 12h-6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>
+            </div>
+            <h3>Currently Learning</h3>
+            <ul class="skill-tags">
+              <li>Backend Development</li><li>AI Engineering</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!--          PROJECTS             -->
+    <!-- ============================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">03 · Projects</span>
+          <h2 class="section__title">Technical Projects</h2>
+          <p class="section__subtitle">A selection of things I've built and shipped.</p>
+        </header>
+
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <header class="project-card__header">
+              <div class="project-card__badge">Featured</div>
+              <h3 class="project-card__title">Dina Farms — Product Showcase</h3>
+              <p class="project-card__subtitle">E-commerce showcase · HTML5 · CSS3</p>
+            </header>
+            <p class="project-card__desc">
+              Multi-section product showcase site with a custom utility CSS framework of 200+
+              reusable classes, 3D flip cards, dropdown mega-menu, and multi-column footer.
+            </p>
+            <ul class="project-card__tags">
+              <li>HTML5</li><li>CSS3</li><li>Flexbox</li><li>Custom Utility Framework</li><li>3D Transforms</li>
+            </ul>
+            <footer class="project-card__footer">
+              <a href="https://menafawzy92.github.io/Dina-Farms-Products" target="_blank" rel="noopener" class="project-card__link">
+                Live Demo
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>
+              </a>
+            </footer>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <header class="project-card__header">
+              <h3 class="project-card__title">Café Shop — Landing Page</h3>
+              <p class="project-card__subtitle">Multi-section landing page · HTML5 · CSS3</p>
+            </header>
+            <p class="project-card__desc">
+              11-section café landing page featuring fixed navigation, dropdown submenu,
+              hover-reveal product grid, pricing cards, and team profiles.
+            </p>
+            <ul class="project-card__tags">
+              <li>HTML5</li><li>CSS3</li><li>Pseudo-elements</li><li>Hover Interactions</li>
+            </ul>
+            <footer class="project-card__footer">
+              <a href="https://menafawzy92.github.io/Cafe-Shop" target="_blank" rel="noopener" class="project-card__link">
+                Live Demo
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>
+              </a>
+            </footer>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <header class="project-card__header">
+              <div class="project-card__badge">Live</div>
+              <h3 class="project-card__title">Engagement Invitation Web App</h3>
+              <p class="project-card__subtitle">Interactive invitation · HTML5 · CSS3 · JS</p>
+            </header>
+            <p class="project-card__desc">
+              A fully responsive digital invitation with an elegant opening animation, event
+              countdown, photo gallery, venue details, and one-tap RSVP.
+            </p>
+            <ul class="project-card__tags">
+              <li>Responsive</li><li>JavaScript</li><li>Animations</li><li>RSVP Flow</li>
+            </ul>
+            <footer class="project-card__footer">
+              <a href="https://public-five-gamma-78.vercel.app/" target="_blank" rel="noopener" class="project-card__link">
+                Live Demo
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>
+              </a>
+            </footer>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card project-card--muted reveal">
+            <header class="project-card__header">
+              <div class="project-card__badge project-card__badge--wip">In Progress</div>
+              <h3 class="project-card__title">E-Commerce Web App</h3>
+              <p class="project-card__subtitle">HTML5 · CSS3 · JavaScript</p>
+            </header>
+            <p class="project-card__desc">
+              An e-commerce application with product listing, shopping cart, and interactive UI
+              elements. Currently in active development.
+            </p>
+            <ul class="project-card__tags">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Cart Logic</li>
+            </ul>
+            <footer class="project-card__footer">
+              <span class="project-card__link project-card__link--disabled">
+                Coming soon
+              </span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!--        EXPERIENCE             -->
+    <!-- ============================= -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">04 · Experience</span>
+          <h2 class="section__title">Professional Experience</h2>
+          <p class="section__subtitle">
+            Technical sales experience that sharpened my client-communication,
+            requirements-gathering, and problem-solving skills.
+          </p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <header class="timeline__header">
+                <h3>Technical Sales Engineer</h3>
+                <span class="timeline__company">Target Engineering</span>
+                <span class="timeline__dates">Jul 2025 – Present</span>
+              </header>
+              <ul class="timeline__list">
+                <li>Manage the full sales cycle for control and safety systems in the Oil &amp; Gas sector.</li>
+                <li>Coordinate with engineering teams to translate client needs into project specifications.</li>
+                <li>
+                  <strong>Key achievement:</strong> Sold <strong>98K USD</strong> in solutions,
+                  generating <strong>~29.4K USD profit (30% margin)</strong> — contributing to
+                  <strong>120%</strong> of the annual profit target (1.12M EGP).
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <header class="timeline__header">
+                <h3>Technical Sales Engineer</h3>
+                <span class="timeline__company">EISAC Automation</span>
+                <span class="timeline__dates">Jan 2025 – May 2025</span>
+              </header>
+              <ul class="timeline__list">
+                <li>Supported industrial automation sales projects in the pharmaceutical sector.</li>
+                <li>Managed CRM and sales pipeline via Odoo ERP.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <header class="timeline__header">
+                <h3>Sales Engineer</h3>
+                <span class="timeline__company">EMS Engineering Marketing Services</span>
+                <span class="timeline__dates">Feb 2024 – Dec 2024</span>
+              </header>
+              <ul class="timeline__list">
+                <li>Represented Camfil (global air filtration leader) as exclusive agent in Egypt.</li>
+                <li>Delivered customized filtration solutions to pharmaceutical clients.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!--         EDUCATION             -->
+    <!-- ============================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">05 · Education</span>
+          <h2 class="section__title">Education</h2>
+        </header>
+
+        <article class="edu-card reveal">
+          <div class="edu-card__left">
+            <div class="edu-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+          </div>
+          <div class="edu-card__right">
+            <h3>B.Sc. in Electronics and Communication Engineering</h3>
+            <p class="edu-card__school">Faculty of Engineering, Helwan University</p>
+            <p class="edu-card__dates">Oct 2018 – Jul 2023 · Grade: Good</p>
+            <div class="edu-card__project">
+              <h4>Graduation Project — ADAM (Ant Detect Alive Men)</h4>
+              <p>
+                Hexapod robot designed to detect victims under rubble using a thermal camera,
+                microphone, and Raspberry Pi.
+              </p>
+              <!-- <p class="edu-card__award">
+                <strong>Grade: Excellent</strong> ·
+                5th Place, Engineering Innovations Exhibition, Helwan University, Aug 2023
+              </p> -->
+
+              <p class="edu-card__award">
+                <strong>Grade: Excellent</strong> ·
+                5th Place, Engineering Innovations Exhibition, Helwan University, Aug 2023
+                <a
+                  href="https://drive.google.com/file/d/1KYf5m4uQzuEKrc4z-qWpRYlBa-rCpWwf/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener"
+                  class="edu-card__award-link"
+                >
+                  View Award
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <path d="M15 3h6v6M10 14 21 3"/>
+                  </svg>
+                </a>
+              </p>
+
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!--      CERTIFICATIONS           -->
+    <!-- ============================= -->
+    <section class="section section--alt" id="certifications">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">06 · Certifications</span>
+          <h2 class="section__title">Certifications &amp; Training</h2>
+          <p class="section__subtitle">Formal learning that supports the work above.</p>
+        </header>
+
+         <div class="certs">
+            <a
+              href="https://drive.google.com/file/d/1A-cB6Fxs6F-nmC6LqxCrctKSKPQ-1F1Y/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              class="cert-card reveal"
+              aria-label="View Front-End Web Development Diploma certificate"
+            >
+              <div class="cert-card__top">
+                <span class="cert-card__tag cert-card__tag--highlight">Frontend</span>
+                <span class="cert-card__date">Sep 2026</span>
+              </div>
+              <h3>Front-End Web Development Diploma (React JS)</h3>
+              <p class="cert-card__issuer">Software Engineering Future (SEF)</p>
+              <p class="cert-card__meta">120 Hours · Score: 95.40%</p>
+              <span class="cert-card__link">
+                View Certificate
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <path d="M15 3h6v6M10 14 21 3"/>
+                </svg>
+              </span>
+            </a>
+
+            <a
+              href="https://drive.google.com/file/d/1-HtEciu0KAd8Zk1v4raB1BdJqzv4D2MJ/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              class="cert-card reveal"
+              aria-label="View ITI Embedded Systems Engineer Track certificate"
+            >
+              <div class="cert-card__top">
+                <span class="cert-card__tag">Embedded</span>
+                <span class="cert-card__date">Jul – Nov 2023</span>
+              </div>
+              <h3>ITI Embedded Systems Engineer Track</h3>
+              <p class="cert-card__issuer">Information Technology Institute (ITI)</p>
+              <span class="cert-card__link">
+                View Certificate
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <path d="M15 3h6v6M10 14 21 3"/>
+                </svg>
+              </span>
+            </a>
+
+            <article class="cert-card reveal">
+              <div class="cert-card__top">
+                <span class="cert-card__tag">Embedded</span>
+                <span class="cert-card__date">Oct 2022 – May 2023</span>
+              </div>
+              <h3>Embedded Systems Diploma</h3>
+              <p class="cert-card__issuer">Eng. Mohamed Zaghloul</p>
+              <p class="cert-card__meta">230 Hours</p>
+            </article>
+
+            <article class="cert-card reveal">
+              <div class="cert-card__top">
+                <span class="cert-card__tag">Programming</span>
+                <span class="cert-card__date">Jul 2020</span>
+              </div>
+              <h3>Python for Beginners: Basics to Advanced</h3>
+              <p class="cert-card__issuer">Udemy</p>
+            </article>
+
+            <a
+              href="https://drive.google.com/file/d/16L6dUkh_L_IORXPdxYZtqYRSV-Gl3VMP/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              class="cert-card reveal"
+              aria-label="View IEEE MIE Certificate of Appreciation"
+            >
+              <div class="cert-card__top">
+                <span class="cert-card__tag">Recognition</span>
+                <span class="cert-card__date">Aug 2023</span>
+              </div>
+              <h3>IEEE MIE Certificate of Appreciation</h3>
+              <p class="cert-card__issuer">Made in Egypt Program</p>
+              <span class="cert-card__link">
+                View Certificate
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <path d="M15 3h6v6M10 14 21 3"/>
+                </svg>
+              </span>
+            </a>
+          </div><!--certs-->
+      </div><!--container-->
+    </section>
+
+    <!-- ============================= -->
+    <!--   ONGOING DEVELOPMENT         -->
+    <!-- ============================= -->
+    <section class="section" id="development">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">07 · Growth</span>
+          <h2 class="section__title">Ongoing Professional Development</h2>
+          <p class="section__subtitle">What I'm learning right now.</p>
+        </header>
+
+        <div class="dev-grid">
+          <article class="dev-card reveal">
+            <div class="dev-card__status">
+              <span class="pulse-dot"></span> In Progress
+            </div>
+            <h3>Backend Development</h3>
+            <p class="dev-card__provider">Software Engineering Future (SEF)</p>
+            <div class="dev-card__progress">
+              <div class="progress-track"><div class="progress-fill" style="width: 60%"></div></div>
+              <span>Expected completion: Jan 2027</span>
+            </div>
+          </article>
+
+          <article class="dev-card reveal">
+            <div class="dev-card__status">
+              <span class="pulse-dot"></span> In Progress
+            </div>
+            <h3>AI Engineering</h3>
+            <p class="dev-card__provider">Software Engineering Future (SEF)</p>
+            <div class="dev-card__progress">
+              <div class="progress-track"><div class="progress-fill" style="width: 40%"></div></div>
+              <span>Expected completion: Mar 2027</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!--         CONTACT               -->
+    <!-- ============================= -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">08 · Contact</span>
+          <h2 class="section__title">Let's build something together</h2>
+          <p class="section__subtitle">
+            I'm currently open to Frontend, Software Engineering, and technical roles.
+            If you'd like to get in touch, drop me a line.
+          </p>
+        </header>
+
+        <div class="contact">
+          <a href="mailto:m440789@gmail.com" class="contact__card reveal">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+            </div>
+            <h3>Email</h3>
+            <p>m440789@gmail.com</p>
+          </a>
+
+          <a href="tel:+201096608259" class="contact__card reveal">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3>Phone</h3>
+            <p>+20 109 660 8259</p>
+          </a>
+
+          <a href="https://wa.me/201096608259" target="_blank" rel="noopener" class="contact__card reveal">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.1-.3.2-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4 0-.1-.1-.2-.3-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>+20 109 660 8259</p>
+          </a>
+
+          <a href="https://github.com/MenaFawzy92" target="_blank" rel="noopener" class="contact__card reveal">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.35-1.77-1.35-1.77-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.31 3.52 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5z"/></svg>
+            </div>
+            <h3>GitHub</h3>
+            <p>github.com/MenaFawzy92</p>
+          </a>
+
+          <a href="https://www.linkedin.com/in/menafawzy/" target="_blank" rel="noopener" class="contact__card reveal">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.13 1.44-2.13 2.93v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/menafawzy</p>
+          </a>
+        </div>
+
+        <!-- Contact Form -->
+      <form
+        class="contact-form reveal"
+        id="contactForm"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        novalidate
+      >
+        <h3 class="contact-form__title">Or send me a message directly</h3>
+
+        <div class="contact-form__row">
+          <div class="contact-form__field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+
+        <div class="contact-form__field">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="What is this about?" required />
+        </div>
+
+        <div class="contact-form__field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about the role, project, or idea..." required></textarea>
+        </div>
+
+        <!-- Formspree honeypot (spam trap) — keep hidden -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <button type="submit" class="btn btn--primary contact-form__submit">
+          <span class="contact-form__submit-text">Send Message</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+
+        <p class="contact-form__status" id="cf-status" role="status" aria-live="polite"></p>
+      </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= -->
+  <!--           FOOTER              -->
+  <!-- ============================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">
+        © <span id="year"></span> Mena Fawzy Ibrahim Youssef · Built with HTML, CSS &amp; JavaScript
+      </p>
+      <a href="#home" class="footer__top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
