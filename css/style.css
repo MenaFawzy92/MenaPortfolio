@@ -1442,7 +1442,7 @@ html[data-theme='light'] .theme-toggle__moon { display: block; }
 /* =============================================================
    16. SCROLL REVEAL ANIMATIONS
    ============================================================= */
-.reveal {
+/* .reveal {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1451,6 +1451,25 @@ html[data-theme='light'] .theme-toggle__moon { display: block; }
 }
 
 .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+/* Content is visible by default — no JS needed to see it */
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* When JS is running, start hidden and animate in */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1837,3 +1856,10 @@ a.cert-card:hover .cert-card__link svg {
 .edu-card__award-link:hover svg {
   transform: translate(2px, -2px);
 }
+/* =============================================================
+   23. NO-JS FALLBACK — show all content if JS is unavailable
+   ============================================================= */
+/* .no-js .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+} */
